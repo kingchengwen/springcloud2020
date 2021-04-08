@@ -1,0 +1,10 @@
+server:
+  port: 80
+
+spring:
+  application:
+    name: cloud-consumer-order
+  cloud:
+    # 注册到zookeeper集群
+    zookeeper:
+      connect-string: 172.16.201.128:2181,172.16.201.129:2181,172.16.201.130:2181
